@@ -5,150 +5,137 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>index</title>
     <style>
+        html{
+            scroll-behavior: smooth;
+        }
         body {
             margin: 0;
+            padding: 0;
+            background-color:grey;  
+            scroll-behavior: smooth;      
+        }
+        .container{
+            width:100%;
+            height: 300vh;
+            background-color: tomato;
+            margin: auto;
         }
         
-        #all {
-            width: 80%;
-            height: 300vh;
-            background-color: gray;
-            margin: auto;
-            position: relative;
-        }
-
-        #nav{
-            width: calc(80% - 20px); 
-            height: 100px;
-            padding-left: 10px;
-            padding-right: 10px;
-            /* background-color: brown; */
-            position: fixed;
-            top: 10px;
-            left: 10%;
-            z-index: 2;
-        }
-        #logo{
-            width: 100px;
-            height: 100px;
-            background-color: whitesmoke;
-            background-image: url(img/logo.png);
-            background-size: cover;
-            background-position:center;
-            border-radius: 50px;
-            float: left;
-        }
-        #menu{
-            width: 320px;
-            height: 40px;
-            /* background-color: tomato; */
-            float: right;
-        }
-        #btn1{
-            width: 100px;
-            height: 40px;
-            background-color: wheat;
-            margin-right: 10px; 
-            float: left;           
-        }
-        #btn2{
-            width: 100px;
-            height: 40px;
-            background-color: wheat;  
-            margin-right: 10px;   
-            float: left;       
-        }
-        #btn3{
-            width: 100px;
-            height: 40px;
-            background-color: wheat; 
-            float: left;           
-        }
-
-        #SectionA {
+        .area{
             width: 100%;
-            height: 100vh;
-            background-color: rebeccapurple;
-            background-image: url(img/A.jpg);
-            background-size: cover;
-            background-position: center;
+            height: 100vh;            
+            background-attachment: fixed;            
             position: relative;
-            background-attachment: fixed;
         }
-
-        #SectionB {
-            width: 100%;
-            height: 100vh;
-            background-color: royalblue;
-            background-image: url(img/B.jpg);
-            background-size: cover;
-            background-position: center;
-            position: relative;
-            background-attachment: fixed;
+        .img1{
+            background-image: url(./img/A.jpg);
         }
-
-        #SectionC {
-            width: 100%;
-            height: 100vh;
-            background-color: skyblue;
-            background-image: url(img/C.jpg);
-            background-size: cover;
-            background-position: center;
-            position: relative;
-            background-attachment: fixed;
+        .img2{
+            background-image: url(./img/B.jpg);
         }
-
-        #Mask {
+        .img3{
+            background-image: url(./img/C.jpg);
+        }
+    
+        .area-mask{
             width: 100%;
             height: 50vh;
-            background-color: rgba(0, 0, 0, 0.5);
+            background-color:rgba(0,0,0,0.5);
             position: absolute;
             top: 50vh;
         }
-
-        #btn {
+        .area-mask-btn{
             width: 120px;
             height: 40px;
-            background-color: purple;
+            background-color: brown;
             float: left;
             position: absolute;
-            top: calc(25vh - 20px);
-            left: calc(50% - 60px);
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+        }  
+    
+        nav{
+            width: calc(100% - 20px); 
+            height: 100px;
+            /* background-color: hotpink;  */
+            padding: 10px; 
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 9;                    
         }
+        .avatar{
+            width: 100px;
+            height: 100px;
+            background-color: indianred;
+            background-image: url(./img/avatar.png);
+            background-size: cover;
+            background-position:center ;
+            float: left;
+            border-radius: 50px;
+
+        }
+        .nav-btns{
+            width: auto;
+            height: auto;
+            /* background-color: khaki; */
+            float: right;
+            margin-top: 20px;            
+        }
+        .btn{
+            width: 100px;
+            height: 40px;
+            background-color: lightblue;
+            float: left;
+            margin-left: 10px;
+            text-align:center;
+            line-height: 40px;  
+            transition: 0.3s;                                   
+        }
+
+        .btn:hover{
+            background-color: lightcoral;           
+        } 
+
+        .btn:active{
+            background-color:darkolivegreen;
+        }
+       
     </style>
 </head>
 
 <body>
-    <div id="nav">
-        <div id="logo"></div>
-        <div id="menu">
-            <div id="btn1"></div>
-            <div id="btn2"></div>
-            <div id="btn3"></div>
+    <nav>
+        <div class="avatar"></div>
+        <div class="nav-btns">
+            <a href="#area-1" class="btn">按鈕一</a>
+            <a href="#area-2" class="btn">按鈕二</a>
+            <a href="#area-3" class="btn">按鈕三</a>
+        </div>
+    </nav>
+   
+
+    <div class="container">
+        <div id="area-1" class="area img1">
+            <div class="area-mask">
+                <div class="area-mask-btn"></div>
+            </div>
+        </div>
+        <div id="area-2" class="area img2">
+            <div class="area-mask">
+                <div class="area-mask-btn"></div>
+            </div>
+        </div>
+        <div id="area-3" class="area img3">
+            <div class="area-mask">
+                <div class="area-mask-btn"></div>
+            </div>
         </div>
     </div>
-    <div id="all">        
-        <div id="SectionA">            
-            <div id="Mask">
-                <div id="btn"></div>
-            </div>
-        </div>
 
-        <div id="SectionB">
-            <div id="Mask">
-                <div id="btn"></div>
-            </div>
-        </div>
-
-        <div id="SectionC">
-            <div id="Mask">
-                <div id="btn"></div>
-            </div>
-        </div>
-
-    </div>
 </body>
 
 </html>
