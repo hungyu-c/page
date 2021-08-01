@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Recognition Game</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        text-align: center;
+      }
+      body {
+        background-color: #f06060;
+      }
+      h1 {
+        color: white;
+        text-shadow: 1px 1px 3px #ab3c3c;
+        font-size: 30px;
+        padding: 30px 0;
+      }
+      p {
+        font-size: 16px;
+        color: #fff1f1;
+      }
+      .box-area {
+        width: 500px;
+        height: 500px;
+        margin: 0 auto;
+        background-color: #dddddd;
+        border-radius: 10px;
+        padding: 10px;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .box {
+        width: 50%;
+        height: 50%;
+        background-color: #0b832b;
+        border-radius: 10px;
+        border: 5px solid #dddddd;
+      }
+      /* .answer-box {
+        width: 50%;
+        height: 50%;
+        background-color: #0b832b;
+        border-radius: 10px;
+        border: 5px solid #dddddd;
+        opacity: 0.6;
+      } */
+    </style>
+  </head>
+  <body>
+    <h1>色彩辨別度測試</h1>
+    <p>找到不同的顏色</p>
+    <!-- <button class="start">開始</button> -->
+    <div class="box-area"></div>
+
+    <script>  
+    var level = 2;   
+    var size = 100/level; 
+    var count = 0;
+    function game(){      
+        var boxArea = document.querySelector('.box-area');
+        // 清除boxs區域內既有的元素
+        boxArea.innerHTML = '';
+        var color = `rgb(${Math.floor(Math.random() * 256)},${Math.floor(Math.random() * 256)},${Math.floor(Math.random() * 256)})`;
+        for (var i = 0; i < level**2 ; i++) {
+          boxArea.innerHTML += `<div class="box" style="width:${size}%;height:${size}%;background-color:${color};"></div>`;
+        }
+        var randomanswer = Math.floor(Math.random() * level**2) + 1;
+        var answerBox = document.querySelector(`.box-area .box:nth-child(${randomanswer})`);
+        answerBox.classList.add("answer-box");
+        // 在解答方塊身上修改透明度
+        answerBox.style.opacity = `${0.6+level*0.05}`;
+        // 在正確方塊上綁定監聽事件
+        var answerBox = document.querySelector('.answer-box');
+        answerBox.addEventListener('click', function () {          
+          count++;
+          // console.log(count);
+          if(count == level){
+            level++;
+            size = 100/level;
+            count = 0;
+          }          
+          game();
+        });
+    }
+    game();
+
+    // 開始按鈕
+    // document.querySelector('.start').addEventListener('click',function(){
+    //   game();
+    // })
+    </script>
+  </body>
+</html>
