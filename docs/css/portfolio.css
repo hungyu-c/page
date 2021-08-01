@@ -1,0 +1,96 @@
+body{
+    font-family: Microsoft JhengHei;
+}
+.nav-link{
+    position: relative;
+    z-index: 2;
+}
+.nav-link:hover::before{
+    width: 50px;
+}
+.nav-link::before{
+    content: '';
+    position: absolute;
+    width: 0px;
+    height: 5px;
+    background-color: #f08080;
+    left: 1;
+    bottom: 0;
+    transition-duration: .5s;
+    z-index: -1;
+}
+.nav-font{
+    font-family: Roboto;    
+}
+
+.avatar{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+}
+.box-shadow{
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .16);
+    transition: box-shadow 0.3s;
+}
+.box-shadow:hover{
+    box-shadow: 0 4px 10px rgba(0, 0, 0, .24);
+}
+.card-img{
+    overflow: hidden;
+}
+.card-img-top{
+    height: 25vh;
+    background-size: cover;
+}
+.card-img-top:hover{
+    cursor: pointer;    
+    transform: scale(1.1);
+    transition: transform 1s;    
+}
+.card-img-web{
+    height: 25vh;
+    background-size: cover;
+    background-position: center;
+}
+.card-title{
+    font-size: 18px;
+}
+.link-font{
+    color: #f08080;
+    font-size: 20px;
+}
+.link-font:hover{
+    color: #e9967a;
+}
+.link-btn:focus{
+    outline: none;
+    box-shadow: none;
+}
+
+
+.close-button:focus{
+    outline: none;
+    box-shadow: none;
+}
+.fa-times{
+    font-size: 24px;
+}
+.fa-times:hover{    
+    color: #ffffff !important;
+}
+
+.contact-icon{
+    width: 32px; 
+    height: 32px; 
+    border-radius: 50%; 
+    border:2px solid #f08080;
+}
+.contact-text{
+    color: #f08080;
+}
+
+.footer-text{
+    font-size: 14px;
+}

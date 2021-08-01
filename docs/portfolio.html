@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Miranda Chen</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+      integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  <link rel="stylesheet" href="./css/portfolio.css">
+
+</head>
+
+<body>    
+  <header>
+    <nav class="container col-lg-7 navbar navbar-expand-lg navbar-light bg-white">
+      <a class="navbar-brand font-weight-bold" href="#">Miranda Chen</a>
+      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse nav-font font-weight-bold" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active mr-4">
+            <a class="nav-link pb-1" href="#about">About<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item mr-4">
+            <a class="nav-link pb-1" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item mr-4">
+            <a class="nav-link pb-1" href="#contact">Contact</a>
+          </li>                
+        </ul>
+      </div>
+    </nav>
+  </header>
+  
+  <main>
+    <section>
+      <div class="container col-12 col-md-10 col-lg-6 mb-5 p-5" id="about">
+        <div class="row flex-column align-items-center">          
+          <div class="avatar" style="background-image: url(./img/avatar.JPG);" alt=""></div>          
+          <h1 class="display-4 my-3">Hi, I'm Miranda</h1>
+          <p class="text-justify">我是陳虹佑，畢業於銘傳大學商品設計學系，有七年的工業包裝設計經驗。在前份工作中，接觸到電子看板的介面設計，開始了解UI介面設計的相關資訊。很開心有機會參加中興大學大數據系統開發-全端工程師養成班的訓練課程，學習了前端與後端的技術，擁有程式基礎，對於介面設計將有所幫助。執行團體專題過程中，主要負責企劃與設計，完成Wireframe, Mockup設計稿後，接著進行前端切版與後端資料處理。透過專案的開發流程，學習到如何以較為全觀的視角去完善網站以及滿足使用者需求。
+          </p>
+          <p class="text-justify">My name is Miranda. I graduated from the Department of Product Design of Ming Chuan University. I have seven years’ experience as a packaging engineer. I got to know about interface design in previous job. I think it’s a very promising industry.
+            I’m glad that I participated in the full-end engineer training course of National Chung Hsing University. I have learned the frontend and backend technologies for web development, and which will be helpful for interface design. I was in charge of plan and design in group project. After finishing the wireframe and mockup, I proceeded to do web layout and backend development. During the project process, I learned how to meet user needs and develop a website by the big picture. It was a 
+            valuable experience.            
+          </p>
+        </div>
+        <dl class="row">
+          <dt class="col-sm-3 pl-0">Skills</dt>
+          <dd class="col-sm-9 pl-0">AutoCAD, Adobe Illustrator, Photoshop, HTML, CSS, Bootstrap, JavaScript, Figma</dd>                    
+        </dl>
+      </div>            
+    </section>
+    <section class="bg-light">
+      <div class="container col-12 col-md-11 col-lg-7 my-5 py-4" id="portfolio">
+        <h2 class="mb-3">Portfolio</h2>
+        <nav>
+          <div class="nav nav-tabs border-0 my-3" id="nav-tab" role="tablist">
+            <a class="nav-item nav-link border-0 text-dark bg-transparent pl-0 pb-1 active" id="nav-recent-tab" data-toggle="tab" href="#nav-recent" role="tab" aria-controls="nav-recent" aria-selected="true">Recent</a>
+            <a class="nav-item nav-link border-0 text-dark bg-transparent pb-1" id="nav-kiosk-tab" data-toggle="tab" href="#nav-kiosk" role="tab" aria-controls="nav-kiosk" aria-selected="false">Kiosk Interface</a>
+            <a class="nav-item nav-link border-0 text-dark bg-transparent pb-1" id="nav-packaging-tab" data-toggle="tab" href="#nav-packaging" role="tab" aria-controls="nav-packaging" aria-selected="false">Packaging</a>
+          </div>
+        </nav>
+        <div class="tab-content" id="nav-tabContent">
+          <div class="tab-pane fade show active" id="nav-recent" role="tabpanel" aria-labelledby="nav-recent-tab">
+            <div class="row">
+              <div class="col-12 col-sm-6 col-md-4 mb-3">
+                <div class="card box-shadow p-1 h-100">
+                  <div class="card-img">
+                    <div class="card-img-top" style="background-image: url(./img/wireframe.png);" alt="" data-toggle="modal" data-target="#wireframeModal"></div>                
+                  </div>
+                  <div class="card-body p-1">
+                    <h5 class="card-title font-weight-bold mt-2 mb-0">Education website</h5>
+                    <p class="card-text"><small class="text-muted">Wireframe</small></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 mb-3">
+                <div class="card box-shadow p-1 h-100">
+                  <div class="card-img">
+                    <div class="card-img-top" style="background-image: url(./img/mockup.png);" alt="" data-toggle="modal" data-target="#mockupModal"></div>                
+                  </div>
+                  <div class="card-body p-1">
+                    <h5 class="card-title font-weight-bold mt-2 mb-0">Education website</h5>
+                    <p class="card-text"><small class="text-muted">Mockup</small></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 mb-3">
+                <div class="card box-shadow p-1 h-100 ">
+                  <div class="card-img">
+                    <div class="card-img-web" style="background-image: url(./img/education.png);" alt=""></div>                
+                  </div>
+                  <div class="card-body p-1 d-flex justify-content-between">
+                    <div>
+                      <h5 class="card-title font-weight-bold mt-2 mb-0">Education website</h5>
+                      <p class="card-text"><small class="text-muted"></small></p>
+                    </div>
+                    <div>
+                      <a href="https://110-03-nchu-cucumars.dev-hub.io/" class="btn link-btn px-2 py-1 mt-3" target="blank">
+                        <i class="link-font fas fa-external-link-alt"></i>
+                      </a>                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 mb-3">
+                <div class="card box-shadow p-1 h-100 ">
+                  <div class="card-img">
+                    <div class="card-img-web" style="background-image: url(./img/chatroom.png);" alt=""></div>                
+                  </div>
+                  <div class="card-body p-1 d-flex justify-content-between">
+                    <div>
+                      <h5 class="card-title font-weight-bold mt-2 mb-0">Chat room</h5>
+                      <p class="card-text"><small class="text-muted"></small></p>
+                    </div>
+                    <div>
+                      <a href="https://hungyu-c.github.io/front-end/chatroom" class="btn link-btn px-2 py-1 mt-3" target="blank">
+                        <i class="link-font fas fa-external-link-alt"></i>
+                      </a>                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 mb-3">
+                <div class="card box-shadow p-1 h-100 ">
+                  <div class="card-img">
+                    <div class="card-img-web" style="background-image: url(./img/bmi.png);" alt=""></div>                
+                  </div>
+                  <div class="card-body p-1 d-flex justify-content-between">
+                    <div>
+                      <h5 class="card-title font-weight-bold mt-2 mb-0">BMI calculator</h5>
+                      <p class="card-text"><small class="text-muted"></small></p>
+                    </div>
+                    <div>
+                      <a href="https://hungyu-c.github.io/front-end/bmi-calculator" class="btn link-btn px-2 py-1 mt-3" target="blank">
+                        <i class="link-font fas fa-external-link-alt"></i>
+                      </a>                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 mb-3">
+                <div class="card box-shadow p-1 h-100 ">
+                  <div class="card-img">
+                    <div class="card-img-web" style="background-image: url(./img/moon-card.png);" alt=""></div>                
+                  </div>
+                  <div class="card-body p-1 d-flex justify-content-between">
+                    <div>
+                      <h5 class="card-title font-weight-bold mt-2 mb-0">Moon card</h5>
+                      <p class="card-text"><small class="text-muted"></small></p>
+                    </div>
+                    <div>
+                      <a href="https://hungyu-c.github.io/page1/moon-card" class="btn link-btn px-2 py-1 mt-3" target="blank">
+                        <i class="link-font fas fa-external-link-alt"></i>
+                      </a>                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 mb-3">
+                <div class="card box-shadow p-1 h-100 ">
+                  <div class="card-img">
+                    <div class="card-img-web" style="background-image: url(./img/color-game.png);" alt=""></div>                
+                  </div>
+                  <div class="card-body p-1 d-flex justify-content-between">
+                    <div>
+                      <h5 class="card-title font-weight-bold mt-2 mb-0">Color Recognition Game</h5>
+                      <p class="card-text"><small class="text-muted"></small></p>
+                    </div>
+                    <div>
+                      <a href="https://hungyu-c.github.io/front-end/color-recognition-game" class="btn link-btn px-2 py-1 mt-3" target="blank">
+                        <i class="link-font fas fa-external-link-alt"></i>
+                      </a>                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 mb-3">
+                <div class="card box-shadow p-1 h-100 ">
+                  <div class="card-img">
+                    <div class="card-img-web" style="background-image: url(./img/flex.png);" alt=""></div>                
+                  </div>
+                  <div class="card-body p-1 d-flex justify-content-between">
+                    <div>
+                      <h5 class="card-title font-weight-bold mt-2 mb-0">Web Layout</h5>
+                      <p class="card-text"><small class="text-muted"></small></p>
+                    </div>
+                    <div>
+                      <a href="https://hungyu-c.github.io/page2/flex" class="btn link-btn px-2 py-1 mt-3" target="blank">
+                        <i class="link-font fas fa-external-link-alt"></i>
+                      </a>                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 mb-3">
+                <div class="card box-shadow p-1 h-100 ">
+                  <div class="card-img">
+                    <div class="card-img-web" style="background-image: url(./img/bootstrap.png);" alt=""></div>                
+                  </div>                  
+                  <div class="card-body p-1 d-flex justify-content-between">                    
+                    <div>
+                      <h5 class="card-title font-weight-bold mt-2 mb-0">Web Layout</h5>
+                      <p class="card-text"><small class="text-muted">Bootstrap</small></p>
+                    </div>
+                    <div>
+                      <a href="https://hungyu-c.github.io/bootstrap/index" class="btn link-btn px-2 py-1 mt-3" target="blank">
+                        <i class="link-font fas fa-external-link-alt"></i>
+                      </a>                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tab-pane fade" id="nav-kiosk" role="tabpanel" aria-labelledby="nav-kiosk-tab">
+            <div class="row">
+              <div class="col-12 col-sm-6 col-md-4 mb-3">
+                <div class="card box-shadow p-1 h-100">
+                  <div class="card-img">
+                    <div class="card-img-top" style="background-image: url(./img/self-order.jpg);" alt="" data-toggle="modal" data-target="#orderModal"></div>                
+                  </div>
+                  <div class="card-body p-1">
+                    <h5 class="card-title font-weight-bold mt-2 mb-0">自助點餐機</h5>
+                    <p class="card-text"><small class="text-muted">Self-Ordering Kiosk</small></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 mb-3">
+                <div class="card box-shadow p-1 h-100">
+                  <div class="card-img">
+                    <div class="card-img-top" style="background-image: url(./img/self-registration.jpg);" alt="" data-toggle="modal" data-target="#registerModal"></div>                
+                  </div>
+                  <div class="card-body p-1">
+                    <h5 class="card-title font-weight-bold mt-2 mb-0">醫療掛號機</h5>
+                    <p class="card-text"><small class="text-muted">Self-Registration Kiosk</small></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 mb-3">
+                <div class="card box-shadow p-1 h-100">
+                  <div class="card-img">
+                    <div class="card-img-top" style="background-image: url(./img/meeting-room.png);" alt="" data-toggle="modal" data-target="#meetModal"></div>                
+                  </div>
+                  <div class="card-body p-1">
+                    <h5 class="card-title font-weight-bold mt-2 mb-0">會議室預約系統</h5>
+                    <p class="card-text"><small class="text-muted">Meeting Room Booking System</small></p>
+                  </div>
+                </div>
+              </div>    
+            </div>
+          </div>
+          <div class="tab-pane fade" id="nav-packaging" role="tabpanel" aria-labelledby="nav-packaging-tab">
+            <div class="row">
+              <div class="col-12 col-sm-6 col-md-4 mb-3">
+                <div class="card box-shadow p-1 h-100">
+                  <div class="card-img">
+                    <div class="card-img-top" style="background-image: url(./img/battery-1.png);" alt="" data-toggle="modal" data-target="#batteryModal"></div>                
+                  </div>
+                  <div class="card-body p-1">
+                    <hr class="mt-1 mb-0">
+                    <h5 class="card-title font-weight-bold mt-2 mb-0">鋰電池包裝</h5>
+                    <p class="card-text"><small class="text-muted">Packaging for Lithium Battery</small></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 mb-3">
+                <div class="card box-shadow p-1 h-100">
+                  <div class="card-img">
+                    <div class="card-img-top" style="background-image: url(./img/battery-2.png);" alt="" data-toggle="modal" data-target="#batteryPalletModal"></div>                
+                  </div>
+                  <div class="card-body p-1">
+                    <hr class="mt-1 mb-0">
+                    <h5 class="card-title font-weight-bold mt-2 mb-0">鋰電池包裝</h5>
+                    <p class="card-text"><small class="text-muted">Packaging for Lithium Battery</small></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 mb-3">
+                <div class="card box-shadow p-1 h-100">
+                  <div class="card-img">
+                    <div class="card-img-top" style="background-image: url(./img/mouse.png);" alt="" data-toggle="modal" data-target="#mouseModal"></div>                
+                  </div>
+                  <div class="card-body p-1">
+                    <hr class="mt-1 mb-0">
+                    <h5 class="card-title font-weight-bold mt-2 mb-0">滑鼠包裝</h5>
+                    <p class="card-text"><small class="text-muted">Mouse Packaging</small></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 col-md-4 mb-3">
+                <div class="card box-shadow p-1 h-100">
+                  <div class="card-img">
+                    <div class="card-img-top" style="background-image: url(./img/container-loading.png);" alt="" data-toggle="modal" data-target="#containerModal"></div>                
+                  </div>
+                  <div class="card-body p-1">
+                    <hr class="mt-1 mb-0">
+                    <h5 class="card-title font-weight-bold mt-2 mb-0">貨櫃裝載量評估</h5>
+                    <p class="card-text"><small class="text-muted">Estimate pallet and container loading.</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container col-12 col-md-11 col-lg-7 my-5" id="contact">
+        <h2 class="mb-3">Contact</h2>
+        <div class="row">
+          <div class="col-md-6 mb-2">
+            <div class="email d-flex align-items-center">
+              <div class="mr-3">
+                <div class="contact-icon d-flex justify-content-center align-items-center">
+                  <i class="far fa-envelope contact-text"></i>
+                </div>
+              </div>
+              <div class="text-secondary">hung_yu823@hotmail.com</div>               
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="phone d-flex align-items-center">              
+              <div class="mr-3">
+                <div class="contact-icon d-flex justify-content-center align-items-center">
+                  <i class="fas fa-mobile-alt contact-text"></i>
+                </div>
+              </div>
+              <div class="text-secondary">+886 963 031 910</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="py-3">
+    <div class="container text-center">
+      <hr>
+      <div class="footer-text">
+        Copyright © 2021 Miranda's Portfolio
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal -->
+  <!-- recent -->
+  <div class="modal fade" id="wireframeModal" tabindex="-1" role="dialog" aria-labelledby="wireframeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content bg-transparent border-0">
+        <div class="modal-header border-0 justify-content-end p-0 mb-2">          
+          <button type="button" class="btn close-button border-0" data-dismiss="modal">
+            <i class="fas fa-times text-black-50"></i>
+          </button>
+        </div>
+        <div class="modal-body bg-white p-1">
+          <img src="./img/wireframe.png" class="w-100" alt="">
+        </div>        
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="mockupModal" tabindex="-1" role="dialog" aria-labelledby="mockupModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content bg-transparent border-0">
+        <div class="modal-header border-0 justify-content-end p-0 mb-2">          
+          <button type="button" class="btn close-button border-0" data-dismiss="modal">
+            <i class="fas fa-times text-black-50"></i>
+          </button>
+        </div>
+        <div class="modal-body bg-white p-1">
+          <img src="./img/mockup.png" class="w-100" alt="">
+        </div>        
+      </div>
+    </div>
+  </div>
+  <!-- kiosk -->
+  <div class="modal fade" id="orderModal" tabindex="-1" role="dialog" aria-labelledby="orderModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content bg-transparent border-0">
+        <div class="modal-header border-0 justify-content-end p-0 mb-2">          
+          <button type="button" class="btn close-button border-0" data-dismiss="modal">
+            <i class="fas fa-times text-black-50"></i>
+          </button>
+        </div>
+        <div class="modal-body p-0">
+          <img src="./img/self-order.jpg" class="w-100" alt="">
+        </div>        
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="registerModal" tabindex="-1" role="dialog" aria-labelledby="registerModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content bg-transparent border-0">
+        <div class="modal-header border-0 justify-content-end p-0 mb-2">          
+          <button type="button" class="btn close-button border-0" data-dismiss="modal">
+            <i class="fas fa-times text-black-50"></i>
+          </button>
+        </div>
+        <div class="modal-body p-0">
+          <img src="./img/self-registration.jpg" class="w-100" alt="">
+        </div>        
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="meetModal" tabindex="-1" role="dialog" aria-labelledby="meetModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content bg-transparent border-0">
+        <div class="modal-header border-0 justify-content-end p-0 mb-2">          
+          <button type="button" class="btn close-button border-0" data-dismiss="modal">
+            <i class="fas fa-times text-black-50"></i>
+          </button>          
+        </div>
+        <div class="modal-body p-0">
+          <img src="./img/meeting-room.png" class="w-100" alt="">
+        </div>        
+      </div>
+    </div>
+  </div>
+  <!-- packaging -->
+  <div class="modal fade" id="batteryModal" tabindex="-1" role="dialog" aria-labelledby="batteryModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content bg-transparent border-0">
+        <div class="modal-header border-0 justify-content-end p-0 mb-2">          
+          <button type="button" class="btn close-button border-0" data-dismiss="modal">
+            <i class="fas fa-times text-black-50"></i>
+          </button>
+        </div>
+        <div class="modal-body bg-white p-1">
+          <img src="./img/battery-1.png" class="w-100" alt="">
+        </div>        
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="batteryPalletModal" tabindex="-1" role="dialog" aria-labelledby="batteryPalletModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content bg-transparent border-0">
+        <div class="modal-header border-0 justify-content-end p-0 mb-2">          
+          <button type="button" class="btn close-button border-0" data-dismiss="modal">
+            <i class="fas fa-times text-black-50"></i>
+          </button>
+        </div>
+        <div class="modal-body bg-white p-1">
+          <img src="./img/battery-2.png" class="w-100" alt="">
+        </div>        
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="mouseModal" tabindex="-1" role="dialog" aria-labelledby="mouseModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content bg-transparent border-0">
+        <div class="modal-header border-0 justify-content-end p-0 mb-2">          
+          <button type="button" class="btn close-button border-0" data-dismiss="modal">
+            <i class="fas fa-times text-black-50"></i>
+          </button>
+        </div>
+        <div class="modal-body bg-white p-1">
+          <img src="./img/mouse.png" class="w-100" alt="">
+        </div>        
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="containerModal" tabindex="-1" role="dialog" aria-labelledby="containerModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+      <div class="modal-content bg-transparent border-0">
+        <div class="modal-header border-0 justify-content-end p-0 mb-2">          
+          <button type="button" class="btn close-button border-0" data-dismiss="modal">
+            <i class="fas fa-times text-black-50"></i>
+          </button>
+        </div>
+        <div class="modal-body bg-white p-1">
+          <img src="./img/container-loading.png" class="w-100" alt="">
+        </div>        
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+      integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+      crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+      integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>
