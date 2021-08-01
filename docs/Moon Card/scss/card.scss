@@ -1,0 +1,64 @@
+@import'variable';
+@import'function';
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    @include flex(center, center);
+    background-color: $bg_color;
+    height: 100vh;
+}
+
+.card {
+    @include size(600px, 400px, 15px, linear-gradient(0deg, $blue_light, $blue_dark));
+    @include flex(center, center);
+    // border: 1px solid black;
+    box-shadow:2px 2px 10px #666666;
+    position: relative;
+    overflow: hidden;
+
+    .moon {
+        @include size(50px, 50px, 50%);
+        @include poa(75px, 75px);
+        transform: rotate(135deg);
+        background-color: rgba($color:black, $alpha:0);
+        box-shadow: inset 0px 16px $moon_color, inset 0px 16px 1px 1px $moon_color;
+    }
+
+    .text {
+        @include font($font_h1, 900, 	#F5F5F5)
+    }
+
+    .allstar {
+        @include size(100%, 100%, 0, rgba(0,0,0,0));
+        position: absolute;
+
+        
+
+        @for $i from 1 to 31 {
+            .star#{$i}{
+                @include size(5px, 5px, 50%);
+                @include poa(random(2) * -10%, random(100) * 1%);
+                animation: flying#{$i} random() * 10s ease infinite random() * 10s;                
+            }
+
+            @keyframes flying#{$i} {
+                0%{
+                    transform: translate(0, 0);
+                }
+    
+                90%{
+                    transform: translate(-100px, random(10) * 40px);
+                }
+    
+                100%{
+                    opacity: 0;
+                }
+            }
+        }
+    }
+}

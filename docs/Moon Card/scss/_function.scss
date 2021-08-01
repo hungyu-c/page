@@ -1,0 +1,27 @@
+@mixin size($w, $h, $bdrs, $bg:white){
+    width: $w;
+    height: $h;
+    border-radius: $bdrs;
+    background: $bg;
+}
+
+@mixin flex($j, $a){
+    display: flex;
+    justify-content: $j;
+    align-items: $a;
+}
+
+@mixin font($fz, $fw, $c, $lh: normal, $ls: normal){
+    font-size: $fz;
+    font-weight: $fw;
+    color: $c;
+    line-height: $lh;
+    letter-spacing: $ls;
+}
+
+@mixin poa($t, $l, $tX: 0, $tY: 0){
+    position: absolute;
+    top: $t;
+    left: $l;
+    transform: translate($tX, $tY);
+}
