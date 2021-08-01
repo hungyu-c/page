@@ -11,8 +11,8 @@ body {
     margin: 0 auto;
     width: 600px;    
     border-radius: 10px;
-    background-color: beige;    
-    /* background-image: linear-gradient(to right, lightslategray, darkslateblue); */     
+    background-color: beige;
+    margin-top: 20px;
 }
 
 header {
